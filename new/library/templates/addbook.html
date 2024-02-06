@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<center>
+<h3 class="mt-4">Add Book Details-User Defined</h3></center><br>
+
+
+  <div class="mb-3">
+    <label class="form-label">Title</label>
+      <input type="text" class="form-control" name="t" placeholder="Title">
+  </div><br>
+  <div class="mb-3">
+    <label class="form-label">Author</label>
+      <input type="text" class="form-control" name="a" placeholder="Author">
+  </div><br>
+  <div class="mb-3">
+    <label class="form-label">Price</label>
+      <input type="text" class="form-control" name="p" placeholder="Price">
+  </div><br><br>
+  <div class="mb-3">
+    <label class="form-label">PDF</label>
+      <input type="file" class="form-control" name="f">
+  </div><br>
+  <div class="mb-3">
+    <label class="form-label">Cover</label>
+      <input type="file" class="form-control" name="i">
+  </div><br>
+  <center><button type="submit" class="form-control">Submit</button></center>
+</form>
+{% endblock %}

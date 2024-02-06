@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<center>
+<h3 class="mt-4">Register</h3></center><br>
+<form method="POST">
+   {% csrf_token %}
+  <div class="mb-3">
+    <label class="form-label">Username</label>
+      <input type="text" class="form-control" name="u" placeholder="Enter the username">
+  </div><br>
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+      <input type="password" class="form-control" name="p" placeholder="Enter the password">
+  </div><br>
+  <div class="mb-3">
+    <label class="form-label">Confirm password</label>
+      <input type="password" class="form-control" name="cp" placeholder="Enter the password">
+  </div><br>
+  <div class="mb-3">
+    <label class="form-label">First name</label>
+      <input type="text" class="form-control" name="x" placeholder="Enter the firstname">
+  </div><br>
+  <div class="mb-3">
+    <label class="form-label">Last name</label>
+      <input type="text" class="form-control" name="y" placeholder="Enter the lastname">
+  </div><br>
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+      <input type="text" class="form-control" name="e" placeholder="Enter the email">
+  </div><br>
+  <div class="mb-3">
+    <label class="form-label">Phone</label>
+      <input type="number" class="form-control" name="ph" placeholder="Enter the phone number">
+  </div><br>
+  <div class="mb-3">
+    <label class="form-label">Place</label>
+      <input type="text" class="form-control" name="pl" placeholder="Enter the email">
+  </div><br>
+  <center><button type="submit" class="form-control">Submit</button></center>
+</form>
+{% endblock %}
